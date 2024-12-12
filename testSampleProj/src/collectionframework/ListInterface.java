@@ -3,6 +3,7 @@ package collectionframework;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
 
@@ -18,13 +19,32 @@ public class ListInterface {
 		list.add(10);
 		int a = 10;
 		list.add(a);
+		list.add('a');
+		list.add(10);
+		
 
-		// meth1(list);
+		
+		List list1 = new ArrayList();
+		list1.add("Srikanth");
+		list1.add(12);
+		list1.add('d');
+		list1.add(23.45f);
+		list1.add(23232322323l);
+		list1.add(10);
+		
+		
+		//list.retainAll(list1); // a intersection b
+		
+		//list1.retainAll(list);
+		
+		//list.removeAll(list1);
+
+		 meth1(list);
 		// meth2(list);
 		// meth3(list);
 		// meth4(list);
 		// meth5(list);
-		reverse(list);
+		//reverse(list);
 
 	}
 
