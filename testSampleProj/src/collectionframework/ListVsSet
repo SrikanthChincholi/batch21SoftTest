@@ -1,0 +1,39 @@
+List - ArrayList 
+
+Arrays
+insertion preserve
+duplicates are allowed 
+retrieval is faster
+
+
+LinkedList
+
+Double linked list
+insertion preserve
+insert and delete operations are easy
+duplicates are allowed
+
+
+
+Set - HashSet
+
+Insertion order is not preserved
+duplicates are not allowed
+get() is not available 
+use iterator to get the elements
+
+LinkedHashSet
+
+Insertion order is preserved
+duplicates are not allowed
+get() is not available 
+use iterator to get the elements
+
+TreeSet
+
+It accepts only one type data (Objects eg : String, Integers, Chars etc)
+Insertion order is not preserved
+Elements get sorted in natural order
+duplicates are not allowed
+get() is not available 
+use iterator to get the elements
