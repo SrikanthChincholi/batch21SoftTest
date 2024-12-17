@@ -2,15 +2,16 @@ package collectionframework;
 
 import java.util.Enumeration;
 import java.util.HashMap;
+import java.util.*;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
-public class MapClass {
+public class LinkedHashMapClass {
 
 	public static void main(String[] args) {
 
-		Map<String, String> m = new HashMap<>();
+		Map<String, String> m = new LinkedHashMap();
 		m.put("21", "Srikanth");
 		m.put("11", "Chandu");
 		m.put("41", "Aaryan");

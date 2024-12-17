@@ -5,12 +5,13 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
+import java.util.TreeMap;
 
-public class MapClass {
+public class TreeMapClass {
 
 	public static void main(String[] args) {
 
-		Map<String, String> m = new HashMap<>();
+		Map<String, String> m = new TreeMap<>();
 		m.put("21", "Srikanth");
 		m.put("11", "Chandu");
 		m.put("41", "Aaryan");
