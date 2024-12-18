@@ -15,6 +15,7 @@ public class ArrayEx1 {
 		a[7] = 70;
 		a[8] = 70;
 		a[9] = 70;
+		a[10] = 80;
 
 		for (int i = 0; i < a.length; i++) {
 			System.out.print(a[i]);
