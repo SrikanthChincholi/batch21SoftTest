@@ -46,11 +46,9 @@ public class SeleniumEx2 {
 		pswd.sendKeys("admin123");
 		System.out.println(d.getWindowHandle());
 		WebElement submit = d.findElement(By.xpath("//button[@type='submit']"));
-		submit.click();
 		Thread.sleep(3000);
 		d.navigate().refresh();
 		Thread.sleep(3000);
-		d.navigate().back();
 		submit.click();
 		Thread.sleep(3000);
 		d.quit();
