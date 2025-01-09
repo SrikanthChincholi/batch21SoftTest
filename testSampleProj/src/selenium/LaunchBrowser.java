@@ -2,6 +2,7 @@ package selenium;
 
 import java.time.Duration;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -39,5 +40,38 @@ public class LaunchBrowser {
 	public static void maximizeAndSettime() {
 		d.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
+	}
+
+	public static void clickElemt(By by) {
+		d.findElement(by).click();
+	}
+
+	public static void enterTxt(By by, String value) {
+		d.findElement(by).sendKeys(value);
+	}
+
+	public static WebDriver getDriver() {
+		return d;
+
+	}
+	
+	public static void waitForElement(int secs) throws Exception
+	{
+		Thread.sleep(secs*1000);
+	}
+	
+	public static void tearDown()
+	{
+		getDriver().quit();
+	}
+	
+	public static String getText(By by)
+	{
+		return getDriver().findElement(by).getText();
+	}
+	public static boolean isDisplayed(By by)
+	{
+		return getDriver().findElement(by).isDisplayed();
+		
 	}
 }
