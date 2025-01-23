@@ -1,9 +1,11 @@
 package selenium;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -54,24 +56,29 @@ public class LaunchBrowser {
 		return d;
 
 	}
-	
-	public static void waitForElement(int secs) throws Exception
-	{
-		Thread.sleep(secs*1000);
+
+	public static void waitForElement(int secs) throws Exception {
+		Thread.sleep(secs * 1000);
 	}
-	
-	public static void tearDown()
-	{
+
+	public static void tearDown() {
 		getDriver().quit();
 	}
-	
-	public static String getText(By by)
-	{
+
+	public static String getText(By by) {
 		return getDriver().findElement(by).getText();
 	}
-	public static boolean isDisplayed(By by)
-	{
+
+	public static boolean isDisplayed(By by) {
 		return getDriver().findElement(by).isDisplayed();
-		
+
+	}
+
+	public static  WebElement findElement(By by) {
+		return d.findElement(by);
+	}
+	
+	public static  List<WebElement> findElements(By by) {
+		return d.findElements(by);
 	}
 }
