@@ -20,6 +20,7 @@ public class LaunchBrowser {
 		if (browsername.equalsIgnoreCase("chrome")) {
 			d = new ChromeDriver();
 			d.manage().window().maximize();
+			d.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 			maximizeAndSettime();
 			d.get(url);
 		} else if (browsername.equalsIgnoreCase("firefox")) {
